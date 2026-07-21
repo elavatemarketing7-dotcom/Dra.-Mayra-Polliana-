@@ -1,0 +1,6 @@
+{
+  "name": "Dra. Mayra Polliana - Harmonização Facial",
+  "description": "Landing page de alta conversão para agendamento de Harmonização Facial com a Dra. Mayra Polliana na Av. Paulista, São Paulo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

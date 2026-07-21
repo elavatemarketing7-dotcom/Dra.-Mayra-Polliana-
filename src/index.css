@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Monsieur+La+Doulaise&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+  /* Scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom glassmorphism and premium effects */
+  .premium-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+  }
+
+  .premium-glass-dark {
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #C5A059 0%, #E8D2A6 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-bg-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #E8D2A6 50%, #C5A059 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #E8D2A6 50%, #C5A059 100%);
+  }
+
+  .font-luxury-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-sans-ui {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-signature {
+    font-family: 'Monsieur La Doulaise', cursive;
+  }
+
+  /* Smooth custom animation tickers */
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
+
+  /* Pulse for CTA buttons */
+  @keyframes premium-pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 20px rgba(179, 137, 56, 0.2);
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(179, 137, 56, 0.45);
+    }
+  }
+
+  .animate-premium-pulse {
+    animation: premium-pulse 2.5s infinite ease-in-out;
+  }
+}
